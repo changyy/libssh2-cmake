@@ -34,7 +34,7 @@ set(TOOL_TARGET_DIR "libssh2-1.4.3")
 set(TOOL_TARGET_PATCH "libssh2.patch")
 set(TOOL_TARGET_BASE_URL "http://www.libssh2.org/download")
 set(TOOL_TARGET_INSTALL_PREFIX ${CMAKE_BINARY_DIR})
-set(CONFIG_ADD_OPTIONS "")
+set(CONFIG_ADD_OPTIONS "--with-pic")
 	if(DEFINED CMAKE_TOOLCHAIN_FILE)
 		add_custom_command(
 			OUTPUT ${TOOL_TARGET_BUILD_OUTPUT}
